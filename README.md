@@ -7,6 +7,11 @@ Nim bindings for [Ghostscript](https://ghostscript.com).
 - [Nim](https://nim-lang.org) 2.0.6+
 - [Ghostscript](https://ghostscript.com)
 
+## Installtion
+```bash
+nimble install ghostscript
+```
+
 ## Usage
 
 ```nim
