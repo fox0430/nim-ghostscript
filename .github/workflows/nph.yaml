@@ -1,0 +1,23 @@
+name: Check `nph` formatting
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/nph.yaml'
+      - 'ghostscript.nim'
+      - 'ghostscript.nimble'
+      - 'lowlevel/**'
+      - 'tests/**'
+
+jobs:
+  nph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check `nph` formatting
+        uses: arnetheduck/nph-action@v1
+        with:
+          version: latest
+          options: "lowlevel/ ghostscript.nim ghostscript.nimble tests/"
+          fail: true
+          suggest: true
