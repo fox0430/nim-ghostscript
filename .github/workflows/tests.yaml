@@ -53,6 +53,7 @@ jobs:
         if: runner.os == 'macOS'
         run: |
           brew install ghostscript
+          echo "LIBRARY_PATH=$(brew --prefix)/lib" >> $GITHUB_ENV
 
       - name: Cache nimble
         id: cache-nimble
