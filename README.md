@@ -34,3 +34,6 @@ gs.close()
 ## License
 
 MIT
+
+> [!NOTE]
+> This binding is licensed under MIT, but Ghostscript itself is licensed under [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html). When using this library, your application must comply with the AGPL-3.0 terms, or you must obtain a [commercial license](https://artifex.com/licensing/) from Artifex.
